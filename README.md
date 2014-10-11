@@ -3,10 +3,12 @@ Usage
 
 Install all dependencies
 
-  npm install
+    npm install
 
 Watch and update dist file
 
-  gulp watch
+    gulp watch
 
-Use url http://localhost:8080/ to open start page
+Open start page
+    
+    http://localhost:8080/
