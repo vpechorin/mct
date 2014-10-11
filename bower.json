@@ -1,0 +1,23 @@
+{
+    "name": "mct",
+    "description": "",
+    "version": "0.1.0",
+    "main": "app/scripts/app.js",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+      "bootstrap": "latest",
+      "jquery": "latest",
+      "angular": "latest",
+      "angular-resource": "latest",
+      "angular-ui-router": "latest",
+      "lodash": ">=1.3.0 <2.5.0",
+      "angular-ui-tree": "latest",
+      "angular-bootstrap": "latest",
+      "es5-shim": "latest",
+      "rangy-official": "latest"
+    },
+    "private": true
+}
