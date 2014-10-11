@@ -11,7 +11,7 @@ require('lodash');
 require('angular-ui-tree');
 require('angular-bootstrap');
 
-var app = angular.module('mct', ['ng', 'ui.router', 'ngResource', 'ui.bootstrap', 'ui.tree']);
+var app = angular.module('mct', ['ng', 'ui.router', 'ui.bootstrap', 'ui.tree']);
 
 require('./filters');
 require('./directives');
@@ -21,15 +21,19 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
   $locationProvider.html5Mode(false);
 
-  $urlRouterProvider.otherwise('/sites');
+  $urlRouterProvider.otherwise('/page1');
 
-  $stateProvider
-  .state('login', {
-    url: '/login',
-    templateUrl: 'partials/login.html',
-    controller: 'LoginController'
+  $stateProvider.state('page1', {
+    url: '/page1',
+    templateUrl: 'partials/page1.html',
+    controller: 'Page1Controller'
   })
-
+  .state('page2', {
+    url: '/page2',
+    templateUrl: 'partials/page2.html',
+    controller: 'Page2Controller'
+  });
+/*
   .state('sites', {
     url: '/sites',
     templateUrl: 'partials/sitelist.html',
@@ -113,7 +117,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     template: 'OK',
     controller: 'PrerenderController'
   });
-
+*/
 
 });
 

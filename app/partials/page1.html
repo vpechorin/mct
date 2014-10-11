@@ -1,0 +1,18 @@
+<div class="page-header">
+	<h2>page1.html</h2>
+</div>
+
+<div class="row">
+
+	<div class="col-md-6">
+        <p>{{page.content}} <p>{{comment}} <p><strong>{{i}}</strong>
+	</div>
+
+	<div class="col-md-6">
+        <input type="text" class="form-control" ng-model="page.content" required>
+        <input type="text" class="form-control" ng-model="i" required>
+        <button ng-click="inc()"> +1 </button>
+        <button ng-click="dec()"> -1 </button>
+	</div>
+
+</div>

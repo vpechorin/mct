@@ -2,7 +2,9 @@
 
 var app = require('angular').module('mct');
 
-app.controller('LoginController', require('./login'));
+app.controller('Page1Controller', require('./page1ctrl'));
+app.controller('Page2Controller', require('./page2ctrl'));
+//app.controller('LoginController', require('./login'));
 //app.controller('PageEditController', require('./pageedit'));
 //app.controller('PageTreeController', require('./pagetree'));
 //app.controller('PrerenderController', require('./prerender'));
